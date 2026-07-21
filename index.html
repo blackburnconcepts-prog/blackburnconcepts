@@ -271,8 +271,8 @@ body{background:var(--black);color:var(--white);font-family:var(--font-body);fon
 ::selection{background:var(--copper);color:var(--black)}
 
 /* LOADER */
-#loader{position:fixed;inset:0;z-index:9999;background:var(--black);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:32px;transition:opacity 0.6s ease,visibility 0.6s ease}
-#loader.hidden{opacity:0;visibility:hidden;pointer-events:none;will-change:opacity}
+#loader{position:fixed;inset:0;z-index:9999;background:var(--black);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:32px;transition:opacity 0.6s ease;will-change:opacity}
+#loader.hidden{opacity:0;pointer-events:none}
 .loader-logo{font-family:var(--font-head),"Barlow Condensed",Arial Narrow,sans-serif;font-weight:900;font-size:38px;letter-spacing:0.12em;text-transform:uppercase;color:var(--white);opacity:0;animation:lf 0.5s ease 0.2s forwards;min-height:46px}
 .loader-logo span{color:var(--copper)}
 .loader-bar-track{width:220px;height:2px;background:var(--border);position:relative;overflow:hidden}
@@ -346,7 +346,7 @@ h1.hero-h1 .line{display:block;transform:translateY(110%);animation:hlu 0.9s var
 h1.hero-h1 .line:nth-child(1){animation-delay:1.7s}
 h1.hero-h1 .line:nth-child(2){animation-delay:1.85s}
 h1.hero-h1 .line:nth-child(3){animation-delay:2.0s}
-h1.hero-h1 .accent{color:var(--copper)}
+h1.hero-h1 .accent{color:var(--copper);display:inline;font-variant-numeric:tabular-nums}
 .hero-sub{font-size:15px;line-height:1.8;color:var(--white-dim);font-weight:300;max-width:500px;margin-bottom:48px;border-left:2px solid var(--copper-dim);padding-left:20px;opacity:0;animation:hfu 0.8s var(--ease) 2.2s forwards}
 .hero-actions{display:flex;align-items:center;gap:20px;flex-wrap:wrap;opacity:0;animation:hfu 0.7s var(--ease) 2.4s forwards}
 .hero-stats{position:absolute;bottom:96px;right:60px;z-index:5;display:flex;flex-direction:column;gap:28px;opacity:0;animation:hfu 0.8s var(--ease) 2.5s forwards}
@@ -354,8 +354,8 @@ h1.hero-h1 .accent{color:var(--copper)}
 .hero-stat-label{font-family:var(--font-mono);font-size:9px;letter-spacing:0.28em;color:var(--white-dim);text-transform:uppercase;margin-top:4px;text-align:right}
 .hero-scroll{position:absolute;bottom:40px;left:60px;display:flex;align-items:center;gap:14px;z-index:5;opacity:0;animation:hfu 0.6s ease 2.8s forwards}
 .scroll-bar{width:48px;height:1px;background:var(--border-lt);position:relative;overflow:hidden}
-.scroll-bar::after{will-change:transform;content:'';position:absolute;top:0;left:-100%;width:100%;height:100%;background:var(--copper);animation:sp 2.2s ease-in-out infinite}
-@keyframes sp{0%{left:-100%}100%{left:100%}}
+.scroll-bar::after{will-change:transform;content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:var(--copper);animation:sp 2.2s ease-in-out infinite;transform:translateX(-100%)}
+@keyframes sp{0%{transform:translateX(-100%)}50%{transform:translateX(0)}100%{transform:translateX(100%)}}}
 .scroll-text{font-family:var(--font-mono);font-size:9px;letter-spacing:0.28em;color:var(--white-faint);text-transform:uppercase}
 @keyframes hlu{to{transform:translateY(0)}}
 @keyframes hfu{to{opacity:1;transform:translateY(0)}}
@@ -1632,7 +1632,7 @@ img { max-width: 100%; height: auto; }
   </div>
   <div class="builds-container" style="padding:0 60px">
     <div class="builds-grid">
-      <div class="build-card featured reveal-fade" data-title="LS Engine Swap Build" data-tag="Engine Swap · Custom Fabrication · Full Build" data-desc="Complete LS drivetrain conversion with custom fabricated mounts, full cooling system overhaul, precision engine bay fitment, and all supporting modifications done in-house. A full engineering and fabrication challenge — executed from planning to first start-up." data-img="build1" data-img-src="https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto/v1784410796/remain_44_ae45408b_yt7v5c.jpg">
+      <div class="build-card featured reveal-fade" data-title="LS Engine Swap Build" data-tag="Engine Swap · Custom Fabrication · Full Build" data-desc="Complete LS drivetrain conversion with custom fabricated mounts, full cooling system overhaul, precision engine bay fitment, and all supporting modifications done in-house. A full engineering and fabrication challenge — executed from planning to first start-up." data-img="build1" data-img-src="https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_800,c_limit/v1784410796/remain_44_ae45408b_yt7v5c.jpg">
         <div class="build-img-layer" style="background-image:url('https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_1200,c_limit/v1784410796/remain_44_ae45408b_yt7v5c.jpg')"></div>
         <div class="build-info">
           <div class="build-tag">Engine Swap · Custom Fabrication</div>
@@ -1648,7 +1648,7 @@ img { max-width: 100%; height: auto; }
           <p>Precision TIG work done right. Clean welds, no shortcuts.</p>
         </div>
       </div>
-      <div class="build-card reveal-fade" data-title="Classic Car Engine Swap — Full Build" data-tag="Full Build · Engine Swap · Fabrication" data-desc="Full swap build on a classic body — engine out, custom mounts fabricated, full engine bay prepared and fitted. The kind of project that requires both fabrication expertise and mechanical knowledge working together." data-img="build3" data-img-src="https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto/v1784410758/remain_54_4e0c4b2d_wut3hh.jpg">
+      <div class="build-card reveal-fade" data-title="Classic Car Engine Swap — Full Build" data-tag="Full Build · Engine Swap · Fabrication" data-desc="Full swap build on a classic body — engine out, custom mounts fabricated, full engine bay prepared and fitted. The kind of project that requires both fabrication expertise and mechanical knowledge working together." data-img="build3" data-img-src="https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_800,c_limit/v1784410758/remain_54_4e0c4b2d_wut3hh.jpg">
         <div class="build-img-layer" style="background-image:url('https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_1200,c_limit/v1784410758/remain_54_4e0c4b2d_wut3hh.jpg')"></div>
         <div class="build-info">
           <div class="build-tag">Full Build · Engine Swap</div>
@@ -1656,7 +1656,7 @@ img { max-width: 100%; height: auto; }
           <p>Full engine swap on a classic body. Custom fitment, full fabrication support.</p>
         </div>
       </div>
-      <div class="build-card reveal-fade" data-title="Engine Bay Fitment & Fabrication" data-tag="Engine Bay · Swap Preparation · Fabrication" data-desc="Engine swap preparation — custom mounts, engine positioned and fitted to the bay, all clearances checked and fabricated. The critical fitment phase of a full swap build where precision matters most." data-img="build4" data-img-src="https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto/v1784410739/remain_53_5db9577f_cvjqxb.jpg">
+      <div class="build-card reveal-fade" data-title="Engine Bay Fitment & Fabrication" data-tag="Engine Bay · Swap Preparation · Fabrication" data-desc="Engine swap preparation — custom mounts, engine positioned and fitted to the bay, all clearances checked and fabricated. The critical fitment phase of a full swap build where precision matters most." data-img="build4" data-img-src="https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_800,c_limit/v1784410739/remain_53_5db9577f_cvjqxb.jpg">
         <div class="build-img-layer" style="background-image:url('https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_1200,c_limit/v1784410739/remain_53_5db9577f_cvjqxb.jpg')"></div>
         <div class="build-info">
           <div class="build-tag">Engine Bay · Swap Prep</div>
@@ -1919,7 +1919,7 @@ img { max-width: 100%; height: auto; }
       <div class="crs-slide"><img src="https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto/v1784405851/img_31_ede05202_agdbfz.jpg" alt="Blackburn Concepts" loading="lazy" decoding="async" width="360" height="500"></div>
       <div class="crs-slide"><img src="https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto/v1784405851/img_32_2947ab69_aurlmm.jpg" alt="Blackburn Concepts" loading="lazy" decoding="async" width="360" height="500"></div>
       <div class="crs-slide"><img src="https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto/v1784405851/img_33_bb6e227f_qlt0rl.jpg" alt="Blackburn Concepts" loading="lazy" decoding="async" width="360" height="500"></div>
-      <div class="crs-slide"><img src="https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto/v1784405851/img_34_b2b65377_qaijbz.jpg" alt="Blackburn Concepts" width="360" height="500"></div>
+      <div class="crs-slide"><img src="https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_800,c_limit/v1784405851/img_34_b2b65377_qaijbz.jpg" alt="Blackburn Concepts" width="360" height="500"></div>
       <div class="crs-slide"><img src="https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto/v1784405851/img_35_66e49921_syluem.jpg" alt="Blackburn Concepts" loading="lazy" decoding="async" width="360" height="500"></div>
       <div class="crs-slide"><img src="https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto/v1784405851/img_36_60efb0e7_nlgvs9.jpg" alt="Blackburn Concepts" loading="lazy" decoding="async" width="360" height="500"></div>
       <div class="crs-slide"><img src="https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto/v1784405851/img_37_8650619e_xjr5ay.jpg" alt="Blackburn Concepts" loading="lazy" decoding="async" width="360" height="500"></div>
@@ -1947,7 +1947,7 @@ img { max-width: 100%; height: auto; }
       <div class="crs-slide"><img src="https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto/v1784405851/img_31_ede05202_agdbfz.jpg" alt="Blackburn Concepts" loading="lazy" decoding="async" width="360" height="500"></div>
       <div class="crs-slide"><img src="https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto/v1784405851/img_32_2947ab69_aurlmm.jpg" alt="Blackburn Concepts" loading="lazy" decoding="async" width="360" height="500"></div>
       <div class="crs-slide"><img src="https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto/v1784405851/img_33_bb6e227f_qlt0rl.jpg" alt="Blackburn Concepts" loading="lazy" decoding="async" width="360" height="500"></div>
-      <div class="crs-slide"><img src="https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto/v1784405851/img_34_b2b65377_qaijbz.jpg" alt="Blackburn Concepts" width="360" height="500"></div>
+      <div class="crs-slide"><img src="https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_800,c_limit/v1784405851/img_34_b2b65377_qaijbz.jpg" alt="Blackburn Concepts" width="360" height="500"></div>
       <div class="crs-slide"><img src="https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto/v1784405851/img_35_66e49921_syluem.jpg" alt="Blackburn Concepts" loading="lazy" decoding="async" width="360" height="500"></div>
       <div class="crs-slide"><img src="https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto/v1784405851/img_36_60efb0e7_nlgvs9.jpg" alt="Blackburn Concepts" loading="lazy" decoding="async" width="360" height="500"></div>
       <div class="crs-slide"><img src="https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto/v1784405851/img_37_8650619e_xjr5ay.jpg" alt="Blackburn Concepts" loading="lazy" decoding="async" width="360" height="500"></div>
