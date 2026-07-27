@@ -731,9 +731,9 @@ footer{background:var(--charcoal);border-top:1px solid var(--border)}
 .proj-row.two{grid-template-columns:1fr 1fr}
 
 .project-card{position:relative;overflow:hidden;cursor:pointer;background:var(--dark)}
-.project-card.hero-card{min-height:600px}
-.project-card.tall-card{min-height:480px}
-.project-card.mid-card{min-height:400px}
+.project-card.hero-card{height:600px;max-height:600px}
+.project-card.tall-card{height:480px;max-height:480px}
+.project-card.mid-card{height:400px;max-height:400px}
 
 .project-card img.cover{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;transition:transform 0.7s cubic-bezier(0.16,1,0.3,1)}
 .project-card:hover img.cover{transform:scale(1.05)}
@@ -791,8 +791,8 @@ footer{background:var(--charcoal);border-top:1px solid var(--border)}
 .gal-close:hover{color:var(--copper)}
 
 .gal-stage{flex:1;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;background:var(--black)}
-.gal-img-wrap{display:flex;align-items:center;justify-content:center;width:100%;height:100%;padding:24px}
-#gal-img{max-width:100%;max-height:100%;object-fit:contain;user-select:none;transition:opacity 0.25s ease;display:block;}
+.gal-img-wrap{display:flex;align-items:center;justify-content:center;width:100%;height:100%;padding:0;background:var(--black)}
+#gal-img{display:block;width:auto;height:auto;max-width:min(100%,1100px);max-height:85vh;object-fit:contain;user-select:none;transition:opacity 0.25s ease;}
 
 .gal-nav-btn{position:absolute;top:50%;transform:translateY(-50%);z-index:5;width:52px;height:52px;background:rgba(9,9,9,0.75);border:1px solid var(--border-lt);cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background 0.2s,border-color 0.2s;backdrop-filter:blur(8px)}
 .gal-nav-btn:hover{background:var(--copper);border-color:var(--copper)}
@@ -845,9 +845,9 @@ footer{background:var(--charcoal);border-top:1px solid var(--border)}
 @media(max-width:1100px){
   .crs-outer{margin:0 -32px}
   .crs-slide{flex:0 0 300px;height:420px}
-  .project-card.hero-card{min-height:500px}
-  .project-card.tall-card{min-height:400px}
-  .project-card.mid-card{min-height:340px}
+  .project-card.hero-card{height:500px;max-height:500px}
+  .project-card.tall-card{height:400px;max-height:400px}
+  .project-card.mid-card{height:340px;max-height:340px}
   .proj-row.two{grid-template-columns:1fr}
   .project-info{padding:32px 36px}
   .project-card.hero-card .project-info{padding:40px 36px}
@@ -1154,10 +1154,10 @@ img { max-width: 100%; height: auto; }
   .projects-header h2 { font-size: clamp(44px,10vw,72px); }
   .proj-stack { gap: 2px; }
   .proj-row.two { grid-template-columns: 1fr; }
-  .project-card.hero-card { min-height: 420px; }
-  .project-card.tall-card { min-height: 340px; }
-  .project-card.mid-card { min-height: 300px; }
-  .project-card.hero-card img.cover { height: 420px !important; }
+  .project-card.hero-card { height: 420px; max-height: 420px; }
+  .project-card.tall-card { height: 340px; max-height: 340px; }
+  .project-card.mid-card { height: 300px; max-height: 300px; }
+  .project-card.hero-card img.cover { height: 100% !important; }
   .project-info { padding: 24px 20px; }
   .project-card.hero-card .project-info { padding: 28px 20px; }
   .project-card.hero-card .project-info h3 { font-size: clamp(36px,8vw,56px); }
@@ -1165,8 +1165,8 @@ img { max-width: 100%; height: auto; }
   .proj-cta { opacity: 1 !important; transform: none !important; }
 }
 @media(max-width:480px) {
-  .project-card.hero-card { min-height: 360px; }
-  .project-card.hero-card img.cover { height: 360px !important; }
+  .project-card.hero-card { height: 360px; max-height: 360px; }
+  .project-card.hero-card img.cover { height: 100% !important; }
 }
 
 /* ── GALLERY MODAL ── */
@@ -1178,7 +1178,7 @@ img { max-width: 100%; height: auto; }
   .gal-nav-btn { width: 40px; height: 40px; }
   #gal-prev { left: 4px; }
   #gal-next { right: 4px; }
-  .gal-img-wrap { padding: 8px; }
+  .gal-img-wrap { padding: 0; }
   .gal-footer { padding: 10px 16px; gap: 5px; }
   .gal-dot { width: 4px; height: 4px; }
 }
@@ -1518,7 +1518,7 @@ img { max-width: 100%; height: auto; }
       <!-- ROW 1: Jeep — full width featured hero -->
       <div class="proj-row one">
         <div class="project-card hero-card reveal-fade" onclick="openGallery('jeep')">
-          <img class="cover" src="https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto/v1784405848/img_03_014be4ff_xigupe.jpg" alt="Blackburn Concepts Jeep build — custom fabrication on hoist in Toronto shop" style="height:600px;width:100%;object-fit:cover;object-position:center;" loading="eager" decoding="async" width="600" height="400">
+          <img class="cover" src="https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto/v1784405848/img_03_014be4ff_xigupe.jpg" alt="Blackburn Concepts Jeep build — custom fabrication on hoist in Toronto shop" loading="eager" decoding="async" width="600" height="400">
           <div class="project-overlay"></div>
           <div class="proj-count">
             <svg viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg"><rect x="1" y="1" width="10" height="10" rx="1"/><path d="M1 7.5 L3.5 5 L6 7.5 L8.5 5 L11 7.5"/></svg>
@@ -2125,7 +2125,7 @@ img { max-width: 100%; height: auto; }
       <svg viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><path d="M11 4 L6 9 L11 14" stroke-linecap="round" stroke-linejoin="round"/></svg>
     </button>
     <div class="gal-img-wrap">
-      <img id="gal-img" src="" alt="Build photo" width="1200" height="800" style="width:100%;height:100%;object-fit:cover">
+      <img id="gal-img" src="" alt="Build photo" width="1200" height="800">
     </div>
     <button class="gal-nav-btn" id="gal-next" aria-label="Next image">
       <svg viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><path d="M7 4 L12 9 L7 14" stroke-linecap="round" stroke-linejoin="round"/></svg>
