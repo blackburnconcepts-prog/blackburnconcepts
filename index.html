@@ -2,6 +2,12 @@
 <html lang="en" style="scroll-behavior:smooth;">
 <head>
 <meta charset="UTF-8">
+<link rel="preload" as="image" href="https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_900,c_limit/v1786057432/1A163910-03F2-49AB-BF7F-2FEA173848FD-transparent_my3ydi.png" fetchpriority="high">
+<link rel="preload" as="image" href="https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_900,c_limit/v1786057433/B49ECCCF-FC1A-40E0-AFEB-CD76A237F965-transparent_ddojhd.png" fetchpriority="high">
+<link rel="preload" as="image" href="https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_900,c_limit/v1786057434/12039CB1-D283-41E1-9D73-EE3975C94998-transparent_ebkl2t.png" fetchpriority="high">
+<link rel="preload" as="image" href="https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto/w_900,c_limit/v1786045313/FF741BBF-871B-4CE8-9DF1-E2038F0EF8D5-removebg-preview_ezktm2.png" fetchpriority="high">
+<link rel="preload" as="image" href="https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_900,c_limit/v1785187908/IMG_8940_gsilbg.png" fetchpriority="high">
+<link rel="preload" as="image" href="https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto/v1785187005/IMG_9865_lzodhj.jpg" fetchpriority="high">
 <link rel="preload" as="image" href="https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_1200,c_limit/v1784410791/remain_05_d2066cdb_odmuth.jpg" fetchpriority="high">
 <link rel="preload" as="image" href="https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto/f_auto/w_300,h_160,c_fit/v1781385138/IMG_3172-removebg-preview_y2lexs.png" fetchpriority="high">
 <link rel="preload" as="image" href="https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto/f_auto/w_300,h_160,c_fit/v1781385138/IMG_3168-removebg-preview_leab1j.png" fetchpriority="high">
@@ -247,6 +253,35 @@
     ]
   }
 ]
+
+/* Prefetch accessory carousel images after page load */
+window.addEventListener('load', function(){
+  var prefetchUrls = [
+    "https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_900,c_limit/v1786057590/6C6DB303-426F-41A9-A51C-0A875737FF6D-transparent_2_cic2xf.png",
+    "https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_900,c_limit/v1785186805/IMG_8035_tvimfz.jpg",
+    "https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_900,c_limit/v1785186806/IMG_8215_himhsz.jpg",
+    "https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_900,c_limit/v1785186807/IMG_8216_pi8x4s.jpg",
+    "https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_900,c_limit/v1785186807/IMG_8218_o8roub.jpg",
+    "https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_900,c_limit/v1785186809/IMG_8222_ejwhdd.jpg",
+    "https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_900,c_limit/v1785187008/IMG_3789_awob6c.jpg",
+    "https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_900,c_limit/v1785187009/IMG_3787_ak6jws.jpg",
+    "https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_900,c_limit/v1785187011/IMG_3786_pmcdsl.jpg",
+    "https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_900,c_limit/v1785187012/IMG_3783_sob07f.jpg",
+    "https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_900,c_limit/v1785187015/IMG_3773_riuzq6.jpg",
+    "https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_900,c_limit/v1785187016/IMG_3772_ip0yrg.jpg",
+    "https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_900,c_limit/v1785187018/IMG_3293_pwqju6.jpg",
+    "https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_900,c_limit/v1785187019/IMG_3292_ovzwa0.jpg",
+    "https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_900,c_limit/v1785187021/IMG_3291_svbtzg.jpg",
+    "https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_900,c_limit/v1785187023/IMG_3288_frfb2o.jpg",
+    "https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_900,c_limit/v1785187024/IMG_3287_n6bifv.jpg",
+    "https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_900,c_limit/v1785187026/IMG_3286_voot8i.jpg"
+  ];
+  prefetchUrls.forEach(function(url){
+    var img = new Image();
+    img.src = url;
+  });
+});
+
 </script>
 
 <style>
@@ -282,9 +317,10 @@ body{background:var(--black);color:var(--white);font-family:var(--font-body);fon
 @keyframes lp{to{width:100%}}
 
 /* CURSOR */
-#cursor{position:fixed;top:0;left:0;pointer-events:none;z-index:9998;mix-blend-mode:difference;opacity:0;transition:opacity 0.3s ease}
+#cursor{position:fixed;top:0;left:0;pointer-events:none;z-index:10001;mix-blend-mode:difference;opacity:0;transition:opacity 0.3s ease}
+body.modal-open #cursor{mix-blend-mode:normal}
 .cursor-dot{position:absolute;width:6px;height:6px;border-radius:50%;background:var(--white);transform:translate(-50%,-50%);transition:transform 0.08s ease}
-.cursor-ring{position:absolute;width:36px;height:36px;border:1.5px solid rgba(255,255,255,0.7);border-radius:50%;transform:translate(-50%,-50%);transition:width 0.25s ease,height 0.25s ease,border-color 0.25s ease,opacity 0.25s ease}
+.cursor-ring{position:absolute;width:36px;height:36px;border:1.5px solid rgba(255,255,255,0.85);border-radius:50%;transform:translate(-50%,-50%);transition:width 0.25s ease,height 0.25s ease,border-color 0.25s ease}
 body.ch .cursor-ring{width:56px;height:56px;border-color:rgba(181,98,42,0.9)}
 body.ch .cursor-dot{transform:translate(-50%,-50%) scale(1.8)}
 
@@ -1707,17 +1743,17 @@ img { max-width: 100%; height: auto; }
       <div class="acc-card">
         <div class="acc-photos" id="slider-photos" onclick="openGallery('sliders')" style="cursor:pointer" title="Click to view full gallery">
           <!-- Slots 1–4: product shots (replace src with your Cloudinary URLs) -->
-          <img src="https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto/v1785187864/IMG_6499_gcywdv.png" alt="BBC Rock Sliders — front view" class="acc-active" width="800" height="420" loading="eager">
-          <img src="https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto/v1785187866/IMG_6498_u044ir.png" alt="BBC Rock Sliders — side profile" width="800" height="420" loading="lazy">
-          <img src="https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto/v1785187869/IMG_6497_j5gnul.png" alt="BBC Rock Sliders — detail welds" width="800" height="420" loading="lazy">
-          <img src="https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto/v1785187870/IMG_6495_gonwpa.png" alt="BBC Rock Sliders — pair view" width="800" height="420" loading="lazy">
+          <img src="https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_900,c_limit/v1786057432/1A163910-03F2-49AB-BF7F-2FEA173848FD-transparent_my3ydi.png" alt="BBC Rock Sliders — front view" class="acc-active" width="800" height="420" loading="eager">
+          <img src="https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_900,c_limit/v1786057433/B49ECCCF-FC1A-40E0-AFEB-CD76A237F965-transparent_ddojhd.png" alt="BBC Rock Sliders — side profile" width="800" height="420" loading="eager">
+          <img src="https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_900,c_limit/v1786057434/12039CB1-D283-41E1-9D73-EE3975C94998-transparent_ebkl2t.png" alt="BBC Rock Sliders — detail welds" width="800" height="420" loading="eager">
+          <img src="https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_900,c_limit/v1786057590/6C6DB303-426F-41A9-A51C-0A875737FF6D-transparent_2_cic2xf.png" alt="BBC Rock Sliders — pair view" width="800" height="420" loading="lazy">
           <!-- Slot 5: additional Cloudinary photo -->
-          <img class="acc-photo-cover" src="https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto/v1785186805/IMG_8035_tvimfz.jpg" alt="BBC Rock Sliders — installed" width="800" height="420" loading="lazy">
+          <img class="acc-photo-cover" src="https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_900,c_limit/v1785186805/IMG_8035_tvimfz.jpg" alt="BBC Rock Sliders — installed" width="800" height="420" loading="lazy">
 
-          <img class="acc-photo-cover" src="https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto/v1785186806/IMG_8215_himhsz.jpg" alt="BBC Rock Sliders — photo 6" width="800" height="420" loading="lazy">
-          <img class="acc-photo-cover" src="https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto/v1785186807/IMG_8216_pi8x4s.jpg" alt="BBC Rock Sliders — photo 7" width="800" height="420" loading="lazy">
-          <img class="acc-photo-cover" src="https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto/v1785186807/IMG_8218_o8roub.jpg" alt="BBC Rock Sliders — photo 8" width="800" height="420" loading="lazy">
-          <img class="acc-photo-cover" src="https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto/v1785186809/IMG_8222_ejwhdd.jpg" alt="BBC Rock Sliders — photo 9" width="800" height="420" loading="lazy">
+          <img class="acc-photo-cover" src="https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_900,c_limit/v1785186806/IMG_8215_himhsz.jpg" alt="BBC Rock Sliders — photo 6" width="800" height="420" loading="lazy">
+          <img class="acc-photo-cover" src="https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_900,c_limit/v1785186807/IMG_8216_pi8x4s.jpg" alt="BBC Rock Sliders — photo 7" width="800" height="420" loading="lazy">
+          <img class="acc-photo-cover" src="https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_900,c_limit/v1785186807/IMG_8218_o8roub.jpg" alt="BBC Rock Sliders — photo 8" width="800" height="420" loading="lazy">
+          <img class="acc-photo-cover" src="https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_900,c_limit/v1785186809/IMG_8222_ejwhdd.jpg" alt="BBC Rock Sliders — photo 9" width="800" height="420" loading="lazy">
           <button class="acc-prev-btn" onclick="event.stopPropagation();accSlide('slider-photos',-1)" aria-label="Previous photo">&#8249;</button>
           <button class="acc-next-btn" onclick="event.stopPropagation();accSlide('slider-photos',1)" aria-label="Next photo">&#8250;</button>
           <div class="acc-photo-nav" id="slider-photos-dots"></div>
@@ -1750,23 +1786,23 @@ img { max-width: 100%; height: auto; }
       <div class="acc-card">
         <div class="acc-photos" id="rack-photos" onclick="openGallery('rack')" style="cursor:pointer" title="Click to view full gallery">
           <!-- Slots 1–2: product shots (replace src with your Cloudinary URLs) -->
-          <img src="https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto/v1785187911/IMG_8939_bpcx5d.png" alt="BBC Cargo Rack — top view" class="acc-active" width="800" height="420" loading="eager">
-          <img src="https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto/v1785187908/IMG_8940_gsilbg.png" alt="BBC Cargo Rack — with crossbars" width="800" height="420" loading="lazy">
+          <img src="https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto/v1786045313/FF741BBF-871B-4CE8-9DF1-E2038F0EF8D5-removebg-preview_ezktm2.png" alt="BBC Cargo Rack — top view" class="acc-active" width="800" height="420" loading="eager">
+          <img src="https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_900,c_limit/v1785187908/IMG_8940_gsilbg.png" alt="BBC Cargo Rack — with crossbars" width="800" height="420" loading="eager">
           <!-- Slots 3–13: installed on Jeep photos (Cloudinary URLs) -->
-          <img class="acc-photo-cover" src="https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto/v1785187005/IMG_9865_lzodhj.jpg" alt="BBC Cargo Rack installed — photo 3" width="800" height="420" loading="lazy">
-          <img class="acc-photo-cover" src="https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto/v1785187008/IMG_3789_awob6c.jpg" alt="BBC Cargo Rack installed — photo 4" width="800" height="420" loading="lazy">
-          <img class="acc-photo-cover" src="https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto/v1785187009/IMG_3787_ak6jws.jpg" alt="BBC Cargo Rack installed — photo 5" width="800" height="420" loading="lazy">
-          <img class="acc-photo-cover" src="https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto/v1785187011/IMG_3786_pmcdsl.jpg" alt="BBC Cargo Rack installed — photo 6" width="800" height="420" loading="lazy">
-          <img class="acc-photo-cover" src="https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto/v1785187012/IMG_3783_sob07f.jpg" alt="BBC Cargo Rack installed — photo 7" width="800" height="420" loading="lazy">
-          <img class="acc-photo-cover" src="https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto/v1785187015/IMG_3773_riuzq6.jpg" alt="BBC Cargo Rack installed — photo 8" width="800" height="420" loading="lazy">
-          <img class="acc-photo-cover" src="https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto/v1785187016/IMG_3772_ip0yrg.jpg" alt="BBC Cargo Rack installed — photo 9" width="800" height="420" loading="lazy">
-          <img class="acc-photo-cover" src="https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto/v1785187018/IMG_3293_pwqju6.jpg" alt="BBC Cargo Rack installed — photo 10" width="800" height="420" loading="lazy">
-          <img class="acc-photo-cover" src="https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto/v1785187019/IMG_3292_ovzwa0.jpg" alt="BBC Cargo Rack installed — photo 11" width="800" height="420" loading="lazy">
-          <img class="acc-photo-cover" src="https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto/v1785187021/IMG_3291_svbtzg.jpg" alt="BBC Cargo Rack installed — photo 12" width="800" height="420" loading="lazy">
-          <img class="acc-photo-cover" src="https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto/v1785187023/IMG_3288_frfb2o.jpg" alt="BBC Cargo Rack installed — photo 13" width="800" height="420" loading="lazy">
+          <img class="acc-photo-cover" src="https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_900,c_limit/v1785187005/IMG_9865_lzodhj.jpg" alt="BBC Cargo Rack installed — photo 3" width="800" height="420" loading="eager">
+          <img class="acc-photo-cover" src="https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_900,c_limit/v1785187008/IMG_3789_awob6c.jpg" alt="BBC Cargo Rack installed — photo 4" width="800" height="420" loading="lazy">
+          <img class="acc-photo-cover" src="https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_900,c_limit/v1785187009/IMG_3787_ak6jws.jpg" alt="BBC Cargo Rack installed — photo 5" width="800" height="420" loading="lazy">
+          <img class="acc-photo-cover" src="https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_900,c_limit/v1785187011/IMG_3786_pmcdsl.jpg" alt="BBC Cargo Rack installed — photo 6" width="800" height="420" loading="lazy">
+          <img class="acc-photo-cover" src="https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_900,c_limit/v1785187012/IMG_3783_sob07f.jpg" alt="BBC Cargo Rack installed — photo 7" width="800" height="420" loading="lazy">
+          <img class="acc-photo-cover" src="https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_900,c_limit/v1785187015/IMG_3773_riuzq6.jpg" alt="BBC Cargo Rack installed — photo 8" width="800" height="420" loading="lazy">
+          <img class="acc-photo-cover" src="https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_900,c_limit/v1785187016/IMG_3772_ip0yrg.jpg" alt="BBC Cargo Rack installed — photo 9" width="800" height="420" loading="lazy">
+          <img class="acc-photo-cover" src="https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_900,c_limit/v1785187018/IMG_3293_pwqju6.jpg" alt="BBC Cargo Rack installed — photo 10" width="800" height="420" loading="lazy">
+          <img class="acc-photo-cover" src="https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_900,c_limit/v1785187019/IMG_3292_ovzwa0.jpg" alt="BBC Cargo Rack installed — photo 11" width="800" height="420" loading="lazy">
+          <img class="acc-photo-cover" src="https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_900,c_limit/v1785187021/IMG_3291_svbtzg.jpg" alt="BBC Cargo Rack installed — photo 12" width="800" height="420" loading="lazy">
+          <img class="acc-photo-cover" src="https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_900,c_limit/v1785187023/IMG_3288_frfb2o.jpg" alt="BBC Cargo Rack installed — photo 13" width="800" height="420" loading="lazy">
 
-          <img class="acc-photo-cover" src="https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto/v1785187024/IMG_3287_n6bifv.jpg" alt="BBC Cargo Rack — photo 14" width="800" height="420" loading="lazy">
-          <img class="acc-photo-cover" src="https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto/v1785187026/IMG_3286_voot8i.jpg" alt="BBC Cargo Rack — photo 15" width="800" height="420" loading="lazy">
+          <img class="acc-photo-cover" src="https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_900,c_limit/v1785187024/IMG_3287_n6bifv.jpg" alt="BBC Cargo Rack — photo 14" width="800" height="420" loading="lazy">
+          <img class="acc-photo-cover" src="https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_900,c_limit/v1785187026/IMG_3286_voot8i.jpg" alt="BBC Cargo Rack — photo 15" width="800" height="420" loading="lazy">
           <button class="acc-prev-btn" onclick="event.stopPropagation();accSlide('rack-photos',-1)" aria-label="Previous photo">&#8249;</button>
           <button class="acc-next-btn" onclick="event.stopPropagation();accSlide('rack-photos',1)" aria-label="Next photo">&#8250;</button>
           <div class="acc-photo-nav" id="rack-photos-dots"></div>
@@ -2375,7 +2411,7 @@ if(cur&&window.matchMedia('(pointer:fine)').matches){
   })();
 
   /* Hover expansion — include acc-photos and acc-card */
-  document.querySelectorAll('a,button,.project-card,.service-card,.pillar,.process-step,.why-feature,.crs-slide,.build-card,.acc-photos,.acc-card,.rvw-slide').forEach(function(el){
+  document.querySelectorAll('a,button,.project-card,.service-card,.pillar,.process-step,.why-feature,.crs-slide,.build-card,.acc-photos,.acc-card,.rvw-slide,.gal-prev,.gal-next').forEach(function(el){
     el.addEventListener('mouseenter',function(){document.body.classList.add('ch');});
     el.addEventListener('mouseleave',function(){document.body.classList.remove('ch');});
   });
@@ -2501,58 +2537,57 @@ if(form){
     if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){fmsg.className='form-msg error';fmsg.textContent='Please enter a valid email address.';return;}
     var service=form.querySelector('#f-service').value||'Not specified';
     var vehicle=form.querySelector('#f-vehicle').value.trim()||'Not specified';
-    var subj=encodeURIComponent('Project Inquiry — Blackburn Concepts');
+    var subj=encodeURIComponent('Project Inquiry - Blackburn Concepts');
     var body=encodeURIComponent('Name: '+name+'\nEmail: '+email+'\nService: '+service+'\nVehicle: '+vehicle+'\n\nProject Details:\n'+msg);
     window.location.href='mailto:blackburn.concepts@gmail.com?subject='+subj+'&body='+body;
-    fmsg.className='form-msg success';fmsg.textContent='Opening your email client — we look forward to your message!';
+    fmsg.className='form-msg success';fmsg.textContent='Opening your email client - we look forward to your message!';
   });
 }
 
 /* ══════════════════════════════════════
    PROJECT GALLERY
 ══════════════════════════════════════ */
-})(); // close IIFE temporarily so gallery is global
 
 var GALLERY_DATA = {
   sliders: {
     title:'BBC Rock Sliders',
-    cat:'Accessories Built In-House · Weld-On Rock Sliders for Jeep JK',
+    cat:'Accessories Built In-House  -  Weld-On Rock Sliders for Jeep JK',
     imgs:[
-    "https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto/v1785187864/IMG_6499_gcywdv.png",
-    "https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto/v1785187866/IMG_6498_u044ir.png",
-    "https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto/v1785187869/IMG_6497_j5gnul.png",
-    "https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto/v1785187870/IMG_6495_gonwpa.png",
-    "https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto/v1785186805/IMG_8035_tvimfz.jpg",
-    "https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto/v1785186806/IMG_8215_himhsz.jpg",
-    "https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto/v1785186807/IMG_8216_pi8x4s.jpg",
-    "https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto/v1785186807/IMG_8218_o8roub.jpg",
-    "https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto/v1785186809/IMG_8222_ejwhdd.jpg"
+    "https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_900,c_limit/v1786057432/1A163910-03F2-49AB-BF7F-2FEA173848FD-transparent_my3ydi.png",
+    "https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_900,c_limit/v1786057433/B49ECCCF-FC1A-40E0-AFEB-CD76A237F965-transparent_ddojhd.png",
+    "https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_900,c_limit/v1786057434/12039CB1-D283-41E1-9D73-EE3975C94998-transparent_ebkl2t.png",
+    "https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_900,c_limit/v1786057590/6C6DB303-426F-41A9-A51C-0A875737FF6D-transparent_2_cic2xf.png",
+    "https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_900,c_limit/v1785186805/IMG_8035_tvimfz.jpg",
+    "https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_900,c_limit/v1785186806/IMG_8215_himhsz.jpg",
+    "https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_900,c_limit/v1785186807/IMG_8216_pi8x4s.jpg",
+    "https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_900,c_limit/v1785186807/IMG_8218_o8roub.jpg",
+    "https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_900,c_limit/v1785186809/IMG_8222_ejwhdd.jpg"
     ]
   },
   rack: {
     title:'BBC Cargo Rack',
-    cat:'Accessories Built In-House · Aluminum Cargo Rack for Jeep JK / JL',
+    cat:'Accessories Built In-House  -  Aluminum Cargo Rack for Jeep JK / JL',
     imgs:[
-    "https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto/v1785187911/IMG_8939_bpcx5d.png",
-    "https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto/v1785187908/IMG_8940_gsilbg.png",
-    "https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto/v1785187005/IMG_9865_lzodhj.jpg",
-    "https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto/v1785187008/IMG_3789_awob6c.jpg",
-    "https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto/v1785187009/IMG_3787_ak6jws.jpg",
-    "https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto/v1785187011/IMG_3786_pmcdsl.jpg",
-    "https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto/v1785187012/IMG_3783_sob07f.jpg",
-    "https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto/v1785187015/IMG_3773_riuzq6.jpg",
-    "https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto/v1785187016/IMG_3772_ip0yrg.jpg",
-    "https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto/v1785187018/IMG_3293_pwqju6.jpg",
-    "https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto/v1785187019/IMG_3292_ovzwa0.jpg",
-    "https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto/v1785187021/IMG_3291_svbtzg.jpg",
-    "https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto/v1785187023/IMG_3288_frfb2o.jpg",
-    "https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto/v1785187024/IMG_3287_n6bifv.jpg",
-    "https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto/v1785187026/IMG_3286_voot8i.jpg"
+    "https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto/v1786045313/FF741BBF-871B-4CE8-9DF1-E2038F0EF8D5-removebg-preview_ezktm2.png",
+    "https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_900,c_limit/v1785187908/IMG_8940_gsilbg.png",
+    "https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_900,c_limit/v1785187005/IMG_9865_lzodhj.jpg",
+    "https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_900,c_limit/v1785187008/IMG_3789_awob6c.jpg",
+    "https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_900,c_limit/v1785187009/IMG_3787_ak6jws.jpg",
+    "https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_900,c_limit/v1785187011/IMG_3786_pmcdsl.jpg",
+    "https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_900,c_limit/v1785187012/IMG_3783_sob07f.jpg",
+    "https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_900,c_limit/v1785187015/IMG_3773_riuzq6.jpg",
+    "https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_900,c_limit/v1785187016/IMG_3772_ip0yrg.jpg",
+    "https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_900,c_limit/v1785187018/IMG_3293_pwqju6.jpg",
+    "https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_900,c_limit/v1785187019/IMG_3292_ovzwa0.jpg",
+    "https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_900,c_limit/v1785187021/IMG_3291_svbtzg.jpg",
+    "https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_900,c_limit/v1785187023/IMG_3288_frfb2o.jpg",
+    "https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_900,c_limit/v1785187024/IMG_3287_n6bifv.jpg",
+    "https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_900,c_limit/v1785187026/IMG_3286_voot8i.jpg"
     ]
   },
   porsche: {
     title:'Porsche 911 LS Supercharged',
-    cat:'Custom Fabrication · LS Supercharged Engine Swap',
+    cat:'Custom Fabrication  -  LS Supercharged Engine Swap',
     imgs:[
     "https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto/v1784410731/remain_32_e8c65e01_lm7tkd.jpg",
     "https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto/v1784410761/remain_37_e6c07752_locw5d.jpg",
@@ -2564,7 +2599,7 @@ var GALLERY_DATA = {
   },
   camaro: {
     title:"68' Camaro Restoration",
-    cat:'Classic Restoration · Body Fabrication',
+    cat:'Classic Restoration  -  Body Fabrication',
     imgs:[
 "https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto/v1784410753/remain_43_b91d713b_g3kjd1.jpg",
 "https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto/v1784410762/remain_41_1f22a77c_bwmtn5.jpg",
@@ -2582,7 +2617,7 @@ var GALLERY_DATA = {
   },
   jeep: {
     title:'The Blackburn Jeep Build',
-    cat:'Build Documentation · Chronological Process',
+    cat:'Build Documentation  -  Chronological Process',
     imgs:[
 "https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto/v1784410774/remain_01_d0ebdb62_nhuay0.jpg",
 "https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto/v1784410788/remain_02_45d7ac78_vfx0un.jpg",
@@ -2653,7 +2688,7 @@ var GALLERY_DATA = {
   },
   honda: {
     title:'K-Series Turbo Build',
-    cat:'Engine Build · Turbo Fabrication · Performance',
+    cat:'Engine Build  -  Turbo Fabrication  -  Performance',
     imgs:[
 "https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto/v1784410794/remain_14_299eb881_bp8m5i.jpg",
 "https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto/v1784410755/remain_06_1fa76f39_x1m7su.jpg",
@@ -2685,6 +2720,7 @@ function openGallery(proj){
   // Show modal first so image has a container to render into
   galModal.classList.add('open');
   document.body.style.overflow='hidden';
+  document.body.classList.add('modal-open');
   // Small delay ensures modal is visible before we load the image
   setTimeout(function(){ loadGalImg(0); }, 50);
 }
@@ -2692,6 +2728,7 @@ function openGallery(proj){
 function closeGallery(){
   galModal.classList.remove('open');
   document.body.style.overflow='';
+  document.body.classList.remove('modal-open');
 }
 
 function loadGalImg(idx){
@@ -2712,7 +2749,7 @@ function loadGalImg(idx){
     galImg.style.opacity='1';
   };
   tmpImg.src=newSrc;
-  galImg.alt=d.title+' — Photo '+(idx+1);
+  galImg.alt=d.title+' - Photo '+(idx+1);
   galCounter.textContent=(idx+1)+' / '+n;
   document.querySelectorAll('.gal-dot').forEach(function(dot,i){
     dot.classList.toggle('active',i===idx);
@@ -2758,7 +2795,7 @@ if(galModal){
 
 
 /* ══════════════════════════════════════
-   ACCESSORIES — Photo slider + Specs modal
+   ACCESSORIES - Photo slider + Specs modal
 ══════════════════════════════════════ */
 
 /* ── Photo slider ── */
@@ -2806,14 +2843,14 @@ function accSlide(id, dir) {
 /* ── Specs modal content ── */
 var ACC_SPECS = {
   sliders: {
-    title: 'BBC Rock Sliders — Full Specs',
+    title: 'BBC Rock Sliders - Full Specs',
     sections: [
       {
         title: 'Overview',
         items: [
           'Manufactured from 1/4&Prime; steel plate and 1.75&Prime; OD &times; .120 steel or DOM tubing',
-          'Weld-on design — mounts directly to the factory frame of the JK to protect sides and underbody from trail damage',
-          'Strong enough to support the full vehicle weight — can be used as a jack point',
+          'Weld-on design - mounts directly to the factory frame of the JK to protect sides and underbody from trail damage',
+          'Strong enough to support the full vehicle weight - can be used as a jack point',
           'Sleek, low profile design that complements and protects the vehicle',
           'Step top plate is removable for easy repaint or to apply a different finish'
         ]
@@ -2823,7 +2860,7 @@ var ACC_SPECS = {
         items: [
           'Available in Steel or DOM tubing',
           'Available in 0&deg;, 30&deg; or 45&deg; depending on the look and function you are looking for',
-          'Available raw — can be paint-matched to your vehicle once installed',
+          'Available raw - can be paint-matched to your vehicle once installed',
           'Ships bare metal with welded seams ready for contour grinding and/or paint'
         ]
       },
@@ -2841,13 +2878,13 @@ var ACC_SPECS = {
     note: 'Made to order with a lead time of 2&ndash;3 weeks. We also build them for Toyota or custom sizes to work with your project.'
   },
   rack: {
-    title: 'BBC Cargo Rack — Full Specs',
+    title: 'BBC Cargo Rack - Full Specs',
     sections: [
       {
         title: 'Fitment',
         items: [
           '2007&ndash;2018 Jeep JK (JL version also available)',
-          'Steel brackets included with perfect fit — no need to remove when swapping hard/soft top',
+          'Steel brackets included with perfect fit - no need to remove when swapping hard/soft top',
           'Easy installation'
         ]
       },
@@ -2856,7 +2893,7 @@ var ACC_SPECS = {
         items: [
           '27&Prime; &times; 42&Prime; &times; 2&Prime; dimensions',
           '1/8&Prime; thick aircraft-grade aluminum alloy',
-          'Super lightweight — low profile for better rooftop access',
+          'Super lightweight - low profile for better rooftop access',
           'TIG welded corners for maximum strength',
           '100% Proudly Made in Canada'
         ]
@@ -2864,7 +2901,7 @@ var ACC_SPECS = {
       {
         title: 'Finish',
         items: [
-          'Raw aluminum — mat and paint/powder coat are available separately',
+          'Raw aluminum - mat and paint/powder coat are available separately',
           'Steel mounting brackets included'
         ]
       }
@@ -3030,6 +3067,15 @@ if(crsOuter){
     crsTimer=setInterval(function(){moveCrs(crsIdx+1);},4000);
   });
 }
+
+/* ── Expose functions needed by HTML onclick attributes ── */
+window.openGallery   = openGallery;
+window.closeGallery  = closeGallery;
+window.openAccSpecs  = openAccSpecs;
+window.closeAccSpecs = closeAccSpecs;
+window.accSlide      = accSlide;
+
+})();
 </script>
 
 </body>
