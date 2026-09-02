@@ -795,7 +795,7 @@ footer{background:var(--charcoal);border-top:1px solid var(--border)}
 .project-info{position:absolute;bottom:0;left:0;right:0;padding:44px 48px;z-index:4}
 .project-card.hero-card .project-info{padding:56px 60px}
 
-.proj-cat{font-family:var(--font-mono);font-size:9px;letter-spacing:0.3em;color:var(--copper);text-transform:uppercase;margin-bottom:12px;display:flex;align-items:center;gap:10px}
+.proj-cat{font-family:var(--font-mono);font-size:13px;font-weight:700;letter-spacing:0.22em;color:var(--copper);text-transform:uppercase;margin-bottom:12px;display:flex;align-items:center;gap:10px}
 .proj-cat::before{content:'';width:24px;height:1px;background:var(--copper);flex-shrink:0}
 .project-info h3{font-family:var(--font-head);font-weight:900;text-transform:uppercase;letter-spacing:-0.01em;color:var(--white);line-height:0.95;margin-bottom:14px}
 .project-card.hero-card .project-info h3{font-size:clamp(48px,5.5vw,80px)}
@@ -1703,8 +1703,8 @@ img { max-width: 100%; height: auto; }
       </div>
 
 
-      <!-- ROW 4: Honda K-Series Turbo Build -->
-      <div class="proj-row one" style="margin-top:3px;">
+      <!-- ROW 4: Honda K-Series Turbo Build + 72' BMW 2002 Restoration -->
+      <div class="proj-row two" style="margin-top:3px;">
         <div class="project-card tall-card reveal-fade" onclick="openGallery('honda')">
           <img class="cover" src="https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto/v1784405848/img_08_299eb881_r0rvzn.jpg" alt="Honda K-series turbo build — custom fabrication by Blackburn Concepts Toronto" loading="eager" decoding="async" width="600" height="400">
           <div class="project-overlay"></div>
@@ -1716,6 +1716,38 @@ img { max-width: 100%; height: auto; }
             <div class="proj-cat">Engine Build · Turbo Fabrication · Performance</div>
             <h3>K-Series Turbo<br>Build</h3>
             <p class="proj-desc">Complete K-series turbo setup — custom fabricated intercooler piping, turbo fitment, K-Tuned components, and custom exhaust routing. Fabrication-focused performance build engineered for real output with precision fitment throughout.</p>
+            <span class="proj-cta">View Gallery <svg viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg"><path d="M2 6.5 L11 6.5 M7 2.5 L11 6.5 L7 10.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </div>
+        </div>
+        <div class="project-card tall-card reveal-fade" onclick="openGallery('bmw2002')">
+          <img class="cover" src="https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_1600,c_limit/v1788303058/1.1portada_wfyvbk.jpg" alt="72' BMW 2002 classic restoration — Blackburn Concepts Toronto" loading="eager" decoding="async" width="600" height="400">
+          <div class="project-overlay"></div>
+          <div class="proj-count">
+            <svg viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg"><rect x="1" y="1" width="10" height="10" rx="1"/><path d="M1 7.5 L3.5 5 L6 7.5 L8.5 5 L11 7.5"/></svg>
+            45 Photos
+          </div>
+          <div class="project-info">
+            <div class="proj-cat">Classic Restoration &nbsp;&middot;&nbsp; 72' BMW 2002</div>
+            <h3>72' BMW 2002<br>Restoration</h3>
+            <p class="proj-desc">A metalwork done to a classic 72' BMW 2002 — full rust repair, panel and bodywork restoration, and new parts fitted throughout. One of the most extensive restorations undertaken in the shop, documented from teardown to finished build.</p>
+            <span class="proj-cta">View Gallery <svg viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg"><path d="M2 6.5 L11 6.5 M7 2.5 L11 6.5 L7 10.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ROW 5: Trokas -->
+      <div class="proj-row one" style="margin-top:3px;">
+        <div class="project-card tall-card reveal-fade" onclick="openGallery('trokas')">
+          <img class="cover" src="https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_1600,c_limit/v1788375719/1.1portada_fefzrc.heic" alt="Custom truck builds — engine, suspension and style — Blackburn Concepts Toronto" loading="eager" decoding="async" width="600" height="400">
+          <div class="project-overlay"></div>
+          <div class="proj-count">
+            <svg viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg"><rect x="1" y="1" width="10" height="10" rx="1"/><path d="M1 7.5 L3.5 5 L6 7.5 L8.5 5 L11 7.5"/></svg>
+            30 Photos
+          </div>
+          <div class="project-info">
+            <div class="proj-cat">Performance &amp; Style &nbsp;·&nbsp; Engine, Suspension &amp; Custom Builds</div>
+            <h3>Trokas</h3>
+            <p class="proj-desc">Custom truck builds covering engine performance, suspension performance, and style — from power upgrades to ride height and stance, finished with the fabrication and attention to detail every Blackburn Concepts project gets.</p>
             <span class="proj-cta">View Gallery <svg viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg"><path d="M2 6.5 L11 6.5 M7 2.5 L11 6.5 L7 10.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
           </div>
         </div>
@@ -2710,6 +2742,93 @@ var GALLERY_DATA = {
 "https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto/v1784410755/remain_06_1fa76f39_x1m7su.jpg",
 "https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto/v1784410745/remain_20_9b374912_hto5in.jpg",
 "https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto/v1784410779/remain_23_87316502_jkr4j1.jpg"
+]
+  },
+  trokas: {
+    title:'Trokas',
+    cat:'Performance & Style  -  Engine, Suspension & Custom Builds',
+    imgs:[
+"https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_1600,c_limit/v1788375719/1.1portada_fefzrc.heic",
+"https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_1600,c_limit/v1788375718/2_pbvhfx.jpg",
+"https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_1600,c_limit/v1788375719/3_j3ufqk.heic",
+"https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_1600,c_limit/v1788375720/4_hccusl.heic",
+"https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_1600,c_limit/v1788375722/5_teznwn.heic",
+"https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_1600,c_limit/v1788375723/6_l5flty.heic",
+"https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_1600,c_limit/v1788375722/7_pnekor.heic",
+"https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_1600,c_limit/v1788375723/8_nninlt.jpg",
+"https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_1600,c_limit/v1788375725/9_u2dg5a.heic",
+"https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_1600,c_limit/v1788375725/10_fvm1hf.heic",
+"https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_1600,c_limit/v1788375726/11_vlkaz9.heic",
+"https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_1600,c_limit/v1788375727/12_hpll3m.heic",
+"https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_1600,c_limit/v1788375727/13_yvf7gu.heic",
+"https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_1600,c_limit/v1788375729/14_xsob6z.heic",
+"https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_1600,c_limit/v1788375729/15_qnpixg.heic",
+"https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_1600,c_limit/v1788375730/16_dzd9mi.heic",
+"https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_1600,c_limit/v1788375731/17_rllol2.heic",
+"https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_1600,c_limit/v1788375732/18_t9zol3.heic",
+"https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_1600,c_limit/v1788375733/19_oqmqyp.heic",
+"https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_1600,c_limit/v1788375733/20_uirlty.heic",
+"https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_1600,c_limit/v1788375735/21_tltism.heic",
+"https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_1600,c_limit/v1788375735/22_qian7w.heic",
+"https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_1600,c_limit/v1788375737/23_mg4ybz.heic",
+"https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_1600,c_limit/v1788375737/24_pviuka.heic",
+"https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_1600,c_limit/v1788375738/25_r3z60t.heic",
+"https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_1600,c_limit/v1788375739/26_vvchsa.heic",
+"https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_1600,c_limit/v1788375740/27_sjsaf0.heic",
+"https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_1600,c_limit/v1788375740/28_n1arx5.heic",
+"https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_1600,c_limit/v1788375741/29_zci5dx.heic",
+"https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_1600,c_limit/v1788375744/30_tqxwsp.heic"
+]
+  },
+  bmw2002: {
+    title:"72' BMW 2002 Restoration",
+    cat:'Classic Restoration  -  Full Rebuild',
+    imgs:[
+"https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_1600,c_limit/v1788303058/1.1portada_wfyvbk.jpg",
+"https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_1600,c_limit/v1788303015/01_rnnjxf.heic",
+"https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_1600,c_limit/v1788303014/02_vpmhxd.heic",
+"https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_1600,c_limit/v1788303015/03_dtw5bj.heic",
+"https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_1600,c_limit/v1788303017/05_jc3vfp.heic",
+"https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_1600,c_limit/v1788303019/09_tm3wpx.heic",
+"https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_1600,c_limit/v1788303022/10_oqtczq.heic",
+"https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_1600,c_limit/v1788303046/12_cztumc.heic",
+"https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_1600,c_limit/v1788303047/13_bdkafb.heic",
+"https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_1600,c_limit/v1788303048/14_hceap6.heic",
+"https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_1600,c_limit/v1788303049/15_w3vy55.heic",
+"https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_1600,c_limit/v1788303049/16_npremv.heic",
+"https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_1600,c_limit/v1788303022/17_ylhpyj.heic",
+"https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_1600,c_limit/v1788303023/20_uk1hds.heic",
+"https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_1600,c_limit/v1788303025/23_bf1ujj.heic",
+"https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_1600,c_limit/v1788303050/28_j2vkzz.heic",
+"https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_1600,c_limit/v1788303051/29_yrsgxo.heic",
+"https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_1600,c_limit/v1788303052/30_g767sd.heic",
+"https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_1600,c_limit/v1788303052/31_cvd3vi.heic",
+"https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_1600,c_limit/v1788303053/32_ijpnlf.heic",
+"https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_1600,c_limit/v1788303030/34_nqd7eb.heic",
+"https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_1600,c_limit/v1788303030/35_oiets5.heic",
+"https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_1600,c_limit/v1788303032/37_dfngxq.heic",
+"https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_1600,c_limit/v1788303033/38_ny33zb.heic",
+"https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_1600,c_limit/v1788303034/39_crjltv.heic",
+"https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_1600,c_limit/v1788303034/40_eoqejf.heic",
+"https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_1600,c_limit/v1788303035/41_vgl1vr.heic",
+"https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_1600,c_limit/v1788303036/42_rjfgfo.heic",
+"https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_1600,c_limit/v1788303037/43_aipbjf.heic",
+"https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_1600,c_limit/v1788303054/44_lzywfk.heic",
+"https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_1600,c_limit/v1788303055/45_ngpacp.heic",
+"https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_1600,c_limit/v1788303056/46_q8vbeb.heic",
+"https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_1600,c_limit/v1788303056/47_czvd4z.heic",
+"https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_1600,c_limit/v1788303057/48_vpuufm.heic",
+"https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_1600,c_limit/v1788303037/49_nt2vea.heic",
+"https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_1600,c_limit/v1788303038/50_ma3gua.heic",
+"https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_1600,c_limit/v1788303039/51_mwdvmv.heic",
+"https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_1600,c_limit/v1788303040/52_nw3pvx.heic",
+"https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_1600,c_limit/v1788303041/53_gbf1y3.heic",
+"https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_1600,c_limit/v1788303042/54_vok3h6.heic",
+"https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_1600,c_limit/v1788303042/55_yzxrvk.heic",
+"https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_1600,c_limit/v1788303043/56_iha32j.heic",
+"https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_1600,c_limit/v1788303044/57_qhyf28.heic",
+"https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_1600,c_limit/v1788303045/58_gc1lcy.heic",
+"https://res.cloudinary.com/dwxnvctbh/image/upload/q_auto,f_auto,w_1600,c_limit/v1788303045/59_sl6lzf.heic"
 ]
   }
 };
